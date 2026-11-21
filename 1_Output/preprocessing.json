@@ -1,0 +1,98 @@
+{
+  "source_records": 21799,
+  "selected_records": 19064,
+  "class_order": [
+    "NORM",
+    "AFIB",
+    "MI",
+    "STTC"
+  ],
+  "label_priority": [
+    "AFIB",
+    "MI",
+    "STTC",
+    "NORM"
+  ],
+  "lead_order": [
+    "I",
+    "II",
+    "III",
+    "AVR",
+    "AVL",
+    "AVF",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6"
+  ],
+  "splits": {
+    "train": {
+      "count": 15259,
+      "patients": 13292,
+      "class_counts": {
+        "NORM": 7542,
+        "AFIB": 1211,
+        "MI": 3935,
+        "STTC": 2571
+      }
+    },
+    "val": {
+      "count": 1891,
+      "patients": 1700,
+      "class_counts": {
+        "NORM": 946,
+        "AFIB": 151,
+        "MI": 461,
+        "STTC": 333
+      }
+    },
+    "test": {
+      "count": 1914,
+      "patients": 1670,
+      "class_counts": {
+        "NORM": 956,
+        "AFIB": 152,
+        "MI": 468,
+        "STTC": 338
+      }
+    }
+  },
+  "age": {
+    "sentinel": 300,
+    "replacement": 90,
+    "median": 61.0,
+    "mean": 59.17569958712891,
+    "std": 16.966592366501434,
+    "ddof": 0,
+    "missing": "fill with training median"
+  },
+  "train_class_prior": [
+    0.49426567554473877,
+    0.07936299592256546,
+    0.2578805983066559,
+    0.1684907227754593
+  ],
+  "signal": {
+    "input_unit": "mV",
+    "output_unit": "z-score",
+    "fs_hz": 100,
+    "samples": 1000,
+    "bandpass_hz": [
+      0.5,
+      40.0
+    ],
+    "butter_N": 4,
+    "filter": "scipy.signal.sosfiltfilt",
+    "normalization": "per record, per lead, ddof=0",
+    "std_epsilon": 1e-06,
+    "mode": "offline; uses full 10-second record"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "wfdb": "4.3.1"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "ecg_ids_aligned": 19064,
+  "official_folds_verified": true,
+  "patient_oof_folds": 5,
+  "offline_raw_comparison_records": 9,
+  "offline_max_abs_error": 2.3807182536472737e-07,
+  "replay_vs_saved_max_abs_probability_error": 2.384185791015625e-07,
+  "counterfactual_validation_records": 16,
+  "future_change_max_abs_probability_error": 0.0,
+  "inactive_v1_and_future_change_max_abs_probability_error": 0.0
+}

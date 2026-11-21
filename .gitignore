@@ -1,0 +1,16 @@
+# 原始数据集：从 https://physionet.org/content/ptb-xl/1.0.3/ 下载后放到项目根目录
+ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.3/
+
+# 流程一的大张量（约 915 MB）：运行 1.ipynb 重新生成
+1_Output/X_*.npy
+
+# 训练中途的临时文件
+*.partial.npy
+2_Output/.medformer-*/
+
+# IDE / Python / 系统文件
+.idea/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,65 @@
+{
+  "lead_order": [
+    "I",
+    "V1"
+  ],
+  "sample_rate_hz": 100,
+  "samples_per_record": 1000,
+  "signal_input_units": "mV",
+  "filter": "scipy.signal.sosfilt",
+  "filter_initial_state": "zero at the first observed sample of each lead",
+  "bandpass_hz": [
+    0.5,
+    40.0
+  ],
+  "butterworth_order": 4,
+  "sos": [
+    [
+      0.41433450842934577,
+      0.8286690168586915,
+      0.41433450842934577,
+      1.0,
+      1.042608460963056,
+      0.2936105865064592
+    ],
+    [
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.3219113054843616,
+      0.635000732071908
+    ],
+    [
+      1.0,
+      -2.0,
+      1.0,
+      1.0,
+      -1.9422241623269227,
+      0.9431999636237346
+    ],
+    [
+      1.0,
+      -2.0,
+      1.0,
+      1.0,
+      -1.9754369965573308,
+      0.9764151112867349
+    ]
+  ],
+  "normalization": "one population mean and standard deviation per lead, fitted on selected training records only",
+  "fit_beginning": "both leads observed from the first sample",
+  "fit_records": 15259,
+  "fit_samples_per_lead": 15259000,
+  "mean_mv": [
+    1.1806771804746219e-05,
+    6.3719695097244e-06
+  ],
+  "std_mv": [
+    0.13955521082767217,
+    0.1894356403300705
+  ],
+  "std_epsilon": 1e-06,
+  "window_padding": "zero in standardized units, applied only to unavailable samples",
+  "wake_convention": "a V1 wake action at the end of step w makes samples from index w * sample_rate_hz available"
+}
